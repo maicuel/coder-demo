@@ -127,6 +127,27 @@ div > img:hover {
   color: #ff3b3f;
 }
 
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.55);
+  border-color: none;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 1.5rem 0 0;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
 /* hero */
 .hero {
   background-image: url("https://maicuel.github.io/coder-demo/images/hero-1.jpg");
