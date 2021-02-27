@@ -46,6 +46,7 @@
             transform: scale(1.03);
             box-shadow: 0 0 1em .1em rgb(0 0 0 / 20%)
         }
+        
     }
 } 
 
@@ -63,6 +64,15 @@
             
         & > .img-gallery {
         grid-template-columns: 1fr;
+
+        &:nth-child(odd){
+            grid-column: 1 ;
+        }
+
+        &:nth-child(even){
+            grid-column: 1 ;
+        }
+
         }
     }
 }

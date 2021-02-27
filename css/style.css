@@ -294,6 +294,12 @@ div > img:hover {
   .grid-container-gallery > .img-gallery {
     grid-template-columns: 1fr;
   }
+  .grid-container-gallery > .img-gallery:nth-child(odd) {
+    grid-column: 1;
+  }
+  .grid-container-gallery > .img-gallery:nth-child(even) {
+    grid-column: 1;
+  }
 }
 /* Form */
 .form-floating > label {
@@ -306,6 +312,13 @@ fieldset {
   padding: 0 2rem;
 }
 
+/* media queries */
+@media screen and (max-width: 480px) {
+  fieldset {
+    padding: 0;
+    margin-top: 3rem;
+  }
+}
 /* footer */
 footer {
   background-color: #000;
