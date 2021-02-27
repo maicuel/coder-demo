@@ -129,7 +129,7 @@ div > img:hover {
 
 /* hero */
 .hero {
-  background-image: url("../images/hero-1.jpg");
+  background-image: url("images/hero-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
