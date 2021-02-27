@@ -129,7 +129,7 @@ div > img:hover {
 
 /* hero */
 .hero {
-  background-image: url("../images/hero-1.jpg");
+  background-image: url("https://maicuel.github.io/coder-demo/images/hero-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
@@ -163,6 +163,12 @@ div > img:hover {
   opacity: 0;
 }
 @media screen and (max-width: 480px) {
+  .hero {
+    height: 50vh !important;
+  }
+  .hero::before {
+    height: 50vh;
+  }
   .hero h1 {
     font-size: 2rem;
   }
@@ -282,7 +288,7 @@ div > img:hover {
   .grid-container-gallery {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-gap: 0;
     padding: 2rem;
   }
   .grid-container-gallery > .img-gallery {

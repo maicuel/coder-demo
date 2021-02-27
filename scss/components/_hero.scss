@@ -1,7 +1,7 @@
 /* hero */
 
 .hero {
-    background-image: url('../images/hero-1.jpg');
+    background-image: url('https://maicuel.github.io/coder-demo/images/hero-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
@@ -46,6 +46,13 @@
 @media screen and (max-width: 480px) {
     
     .hero {
+
+      height: 50vh !important;
+
+        &::before {
+            height: 50vh;
+        }
+
         h1 {
             font-size: 2.0rem;
         }
