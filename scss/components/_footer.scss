@@ -1,0 +1,21 @@
+/* footer */
+
+footer {
+    background-color: $black;
+
+    ul li {
+        display: inline;
+    }
+
+    a {
+        font-size: 22px;
+        color: $white;
+        padding: 0 10px;
+        text-decoration: none;
+
+        &:hover {
+            color: $light-gray;
+         }
+    } 
+
+}

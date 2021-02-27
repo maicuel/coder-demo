@@ -1,0 +1,13 @@
+/* Form */
+
+.form-floating {
+    > label {
+        position: absolute;
+        top: 0;
+        left: 15px;
+    }
+}
+
+fieldset {
+    padding:0 2rem;
+}

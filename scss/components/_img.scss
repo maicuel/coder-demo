@@ -1,0 +1,12 @@
+/* image */
+
+div > img{
+    transition-property: transform;
+    transition-duration: 0.2s;
+    
+    &:hover {
+        transform-origin: center;
+        transform: scale(1.03);
+        box-shadow: 0 0 1em .1em rgb(0 0 0 / 20%)
+    }
+}

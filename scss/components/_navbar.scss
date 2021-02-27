@@ -1,0 +1,28 @@
+
+/* Navbar */
+
+.navbar-brand {
+    > img{
+        width: 100px;
+        
+        &:hover {
+            opacity: .7;
+     }
+
+    }
+}
+   
+
+.bg-dark,
+.navbar-dark{
+    background-color: $dark-gray !important;
+    color: $white;
+    font-size: .9rem;
+}
+
+
+.navbar-dark .navbar-nav .nav-link.active{
+    color: $light-red;
+}
+
+

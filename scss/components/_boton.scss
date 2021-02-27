@@ -1,0 +1,15 @@
+/* Boton */ 
+
+.btn  {
+    & > i {
+        opacity: 0;
+        font-size: .8rem;
+        position: relative;
+        left: 2px;
+        transition: 0.5s;
+    }
+    &:hover i {
+        opacity: 1;
+        left: 5px;
+    }
+}

@@ -1,0 +1,43 @@
+
+/* Animaciones */
+
+ @keyframes animation {
+    from {
+        position: relative;
+        top: -30px;
+        opacity: 0; 
+    }
+    to {
+        position: relative;
+        top: 0;
+        opacity: 1; 
+    }
+  }
+
+
+  @keyframes line-animation {
+    0% {
+       width: 0px;
+       opacity: 0; 
+    }
+    50% {
+       width: 150px;
+       opacity: 1; 
+    }
+    100% {
+        width: 100px;
+        opacity: 1; 
+    }
+  }
+
+
+  @keyframes nav-animation {
+    0% {
+       width: 0px;
+       opacity: 0; 
+    }
+    100% {
+        width: 90%;
+        opacity: 1; 
+    }
+  }

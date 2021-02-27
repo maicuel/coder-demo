@@ -1,0 +1,32 @@
+/* Extends */ 
+
+%delay-animation {
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards; 
+}
+
+%title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-shadow: 0px 10px 20px rgb(0 0 0 / 80%);
+    @include animation( animation, 2s);
+    @extend %delay-animation;
+    opacity: 0;
+}
+
+%subtitle {
+    color: #bbbbbb;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: .8rem;
+    color: $light-gray;
+    @include animation(animation, 6s);
+}
+
+%height_75{
+    height: 75vh; 
+}

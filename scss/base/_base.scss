@@ -1,0 +1,21 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    opacity: 1;
+    @include animation(animation, 2s);
+}
+
+a:hover {
+    transition: 0.5s;
+}
+
+h2.card-title {
+    font-size: 1.5rem;
+}
+
+/* base Colors */ 
+
+$light-gray: #bbbbbb;
+$dark-gray: #252b2d;
+$light-red: #ff3b3f;
+$white: #fff;
+$black: #000;
