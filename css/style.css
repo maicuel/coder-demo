@@ -288,7 +288,7 @@ div > img:hover {
   .grid-container-gallery {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 0;
+    grid-gap: 1rem;
     padding: 2rem;
   }
   .grid-container-gallery > .img-gallery {
