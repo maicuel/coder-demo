@@ -4,6 +4,7 @@ body {
     @include animation(animation, 2s);
 }
 
+
 a:hover {
     transition: 0.5s;
 }
@@ -19,3 +20,7 @@ $dark-gray: #252b2d;
 $light-red: #ff3b3f;
 $white: #fff;
 $black: #000;
+
+
+
+

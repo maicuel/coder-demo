@@ -1,0 +1,78 @@
+/* Services */
+
+.service-description {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    font-size: .9rem;
+    margin: 2rem 0;
+    position: relative;
+    left: -15px;
+    width: 115%;
+    color: white;
+    background-color: $dark-gray;
+    z-index: 0;
+    
+    }
+    
+    .service-item {
+        margin: 1rem;
+    
+        &::after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 12px;
+            background-color: $white;
+            margin: 4px 15px;
+            transform: skew(-15deg , 10deg);
+        }
+    
+        &:last-child::after {
+            display: none;
+        }
+        
+    }
+    
+    
+    @media screen and (max-width: 780px) {
+        
+        .service-description {
+            display: flex;
+            align-items: flex-end;
+            text-align: center;
+            font-size: 0.9rem;
+            margin: 2rem 0;
+            position: relative;
+            left: 0;
+            width: 100%;
+            color: white;
+            background-color: $dark-gray;
+            z-index: 0;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        
+        .service-description {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        .service-item {
+            margin: .2rem;
+        }
+    
+        ::after {
+                display: none;
+            }
+            
+    }
+
+
+    /* Services call to action */
+    
+    .service-cta {
+        background-color: $light-red;
+        color: white;
+    }
