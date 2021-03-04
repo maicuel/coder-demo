@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,700&display=swap');
+
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
     opacity: 1;
     @include animation(animation, 2s);
 }
 
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+h3.subtitle-underline:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 1rem auto;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
 
 a:hover {
     transition: 0.5s;
