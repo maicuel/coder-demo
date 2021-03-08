@@ -1,13 +1,40 @@
 /* Carousel */
 
+
 #home-slider {
    @extend %height_75;
   
     img {
         @extend %height_75;
         object-fit: cover;
+        transition: all .9s ease;
+        opacity: .6;
+    }
+
+    .carousel-item {
+
+        background-color: $black;
+    
+        &:hover img {
+            transform: scale(1.1);
+            opacity: .4;
+            
+        }
+    
+        &img::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            @extend %height_75;
+            background-color: rgb(0 0 0 / 35%);
+    
+        }
     }
 }
+
+
+
+
 
 .carousel {
     display: flex;
@@ -23,14 +50,6 @@
     }
 }
 
-
-#home-slider .carousel-item::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    @extend %height_75;
-    background-color: rgb(0 0 0 / 35%);
-}
 
 .carousel-caption {
     position: absolute;

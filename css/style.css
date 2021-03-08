@@ -70,6 +70,11 @@ h2.card-title {
     opacity: 1;
   }
 }
+@keyframes opacity-anim {
+  100% {
+    opacity: 1;
+  }
+}
 /* Extends */
 .carousel-caption::after, .hero .col:after, .carousel h2, .hero h1 {
   animation-iteration-count: 1;
@@ -99,7 +104,7 @@ h2.card-title {
   animation-duration: 6s;
 }
 
-#home-slider .carousel-item::before, #home-slider img, #home-slider, .hero::before {
+#home-slider .carousel-itemimg::before, #home-slider img, #home-slider, .hero::before {
   height: 75vh;
 }
 
@@ -217,6 +222,21 @@ div > img:hover {
 /* Carousel */
 #home-slider img {
   object-fit: cover;
+  transition: all 0.9s ease;
+  opacity: 0.6;
+}
+#home-slider .carousel-item {
+  background-color: #000;
+}
+#home-slider .carousel-item:hover img {
+  transform: scale(1.1);
+  opacity: 0.4;
+}
+#home-slider .carousel-itemimg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .carousel {
@@ -224,13 +244,6 @@ div > img:hover {
   justify-content: center;
   align-items: center;
 }
-#home-slider .carousel-item::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -312,25 +325,40 @@ div > img:hover {
   grid-gap: 1rem;
   padding: 3rem;
 }
+.grid-container-gallery img {
+  opacity: 0;
+}
 .grid-container-gallery > .img-gallery {
   grid-template-columns: 1fr;
+  animation: opacity-anim 1.5s forwards;
 }
 .grid-container-gallery > .img-gallery:nth-child(1) {
   grid-column: 1/span 2;
+  animation-delay: 0.5s;
+}
+.grid-container-gallery > .img-gallery:nth-child(2) {
+  animation-delay: 1s;
 }
 .grid-container-gallery > .img-gallery:nth-child(3) {
   grid-column: 1/span 1;
+  animation-delay: 1.5s;
 }
 .grid-container-gallery > .img-gallery:nth-child(4) {
   grid-column: auto/span 1;
+  animation-delay: 2s;
+}
+.grid-container-gallery > .img-gallery:nth-child(5) {
+  animation-delay: 2.5s;
 }
 .grid-container-gallery > .img-gallery:nth-child(6) {
   grid-column: auto/span 1;
   grid-row: auto/span 2;
+  animation-delay: 3s;
 }
 .grid-container-gallery > .img-gallery:nth-child(7) {
   grid-column: auto/span 2;
   grid-row: auto/span 2;
+  animation-delay: 3.5s;
 }
 .grid-container-gallery img {
   height: 100%;

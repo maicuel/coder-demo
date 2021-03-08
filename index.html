@@ -54,6 +54,9 @@
 </head>
 
 <body class="h-100">
+
+
+  
   <nav class="navbar sticky-top fixed-top navbar-expand-lg p-3 bg-dark navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -74,19 +77,6 @@
           <li class="nav-item">
             <a class="nav-link" href="cabanas.html">Cabañas</a>
           </li>
-
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="cabañas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Cabañas
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="cabana_alpina.html">Cabaña Alpina</a></li>
-              <li><a class="dropdown-item" href="cabana_cumbre.html">Cabaña Cumbre</a></li>
-              <li><a class="dropdown-item" href="cabana_andina.html">Cabaña Andina</a></li>
-            </ul>
-          </li> -->
-
-
           <li class="nav-item">
             <a class="nav-link" href="entorno.html">Entorno</a>
           </li>
@@ -98,7 +88,7 @@
     </div>
   </nav>
 
-  <div id="home-slider" class="carousel slide" data-bs-ride="carousel">
+  <div id="home-slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#home-slider" data-bs-slide-to="0" class="active" aria-current="true"
         aria-label="Slide 1"></button>
@@ -140,21 +130,27 @@
 
 
   <div class="container-fluid bg-secondary text-light px-4">
-    <div class="row d-flex align-items-center pt-5 pb-5">
-      <div class="col-md-6 col-sm-12">
-        <h1 class="mb-4">Exclusivas Cabañas en Termas de Chillán</h1>
-        <p> Contamos con 3 diferentes modelos de cabañas totalmente equipadas para que vivas una experiencia 100%
-          inolvidable inmerso en un bosque nativo, de esta forma buscamos que logres desconectarte de la ciudad y que
-          disfrutes del paisaje y de los atractivos de la zona.</p>
-        <a href="cabanas.html" class="btn btn-lg btn-outline-light mt-3 mb-3 px4"> ver cabañas <i
-            class="fas fa-chevron-right"></i></a>
-      </div>
-      <div class="col-md-6 col-sm-12 mt-5 p-0 img-effect">
-        <img src="images/cumbre.jpg" alt="Cabaña Cumbre para 4 personas en Chillán House" class="img-fluid">
+
+    <div class="container">
+      <div class="row d-flex align-items-center pt-5 pb-5">
+        <div class="col-md-6 col-sm-12">
+          <h1 class="mb-4">Exclusivas Cabañas en Termas de Chillán</h1>
+          <p> Contamos con 3 diferentes modelos de cabañas totalmente equipadas para que vivas una experiencia 100%
+            inolvidable inmerso en un bosque nativo, de esta forma buscamos que logres desconectarte de la ciudad y que
+            disfrutes del paisaje y de los atractivos de la zona.</p>
+          <a href="cabanas.html" class="btn btn-lg btn-outline-light mt-3 mb-3 px4"> ver cabañas <i
+              class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="col-md-6 col-sm-12 mt-5 p-0 img-effect">
+          <img src="images/cumbre.jpg" alt="Cabaña Cumbre para 4 personas en Chillán House" class="img-fluid">
+        </div>
       </div>
     </div>
+
   </div>
 
+
+  
   <div class="container">
     <div class="row d-flex align-items-center pt-5 pb-5">
       <div class="col-md-6 col-sm-12 mb-5 img-effect">
@@ -162,8 +158,54 @@
       </div>
       <div class="col-md-6 col-sm-12">
         <h3 class="mb-4">Nevados de Chillán</h3>
-        <p>Los refugios están ubicados a 9 km del del Centro de Esquí Nevados de Chillán. 15 minutos en auto, mejor
+        <p>Nuestras cabañas están ubicadas a 9 km del del Centro de Esquí Nevados de Chillán. 15 minutos en auto, mejor
           ubicación imposible! Disfruta durante tu estadía la mejor nieve de Chile.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-light pt-5">
+    <div class="row d-flex align-items-center">
+      <div class="col text-center mt-4">
+        <h3 class="subtitle-underline">Conoce nuestras cabañas</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row d-flex align-items-center pt-5 pb-5">
+        <div class="col-md-4 col-sm-12 pb-5">
+          <div class="card">
+            <img src="images/alpina.jpg" class="card-img-top" alt="Cabaña Alpina para 2 personas en Chillán House">
+            <div class="card-body">
+              <h2 class="card-title">Cabaña Alpina</h2>
+              <p>2 Personas</p>
+              <a href="cabana_alpina.html" class="btn btn-secondary px-4">Ver más <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-12 pb-5">
+          <div class="card">
+            <img src="images/cumbre.jpg" class="card-img-top" alt="Cabaña Cumbre para 4 personas en Chillán House">
+            <div class="card-body">
+              <h2 class="card-title">Cabaña Cumbre</h2>
+              <p> 4 Personas</p>
+              <a href="cabana_cumbre.html" class="btn btn-secondary px-4">Ver más <i class="fas fa-chevron-right"></i> </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-12 pb-5">
+          <div class="card">
+            <img src="images/andina.jpg" class="card-img-top" alt="Cabaña Andina para 6 personas en Chillán House">
+            <div class="card-body">
+              <h2 class="card-title">Cabaña Andina</h2>
+              <p>6 Personas</p>
+              <a href="cabana_andina.html" class="btn btn-secondary px-4">Ver más <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+  
       </div>
     </div>
   </div>
