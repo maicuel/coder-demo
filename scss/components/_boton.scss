@@ -13,3 +13,11 @@
         left: 5px;
     }
 }
+
+.btn-secondary {
+       
+    &:hover{
+        background-color: $dark-gray;
+        border-color: $dark-gray;
+    }
+}

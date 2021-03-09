@@ -126,7 +126,6 @@
     }
 }
 
-
 @media screen and (max-width: 480px) {
     
     #carousel-cabanas{
@@ -142,6 +141,17 @@
         }
     }
 }
+
+
+@media screen and (min-width:782px) and (max-width: 988px) {
+    
+    #carousel-cabanas{
+        position: relative;
+        top: -90px;
+    }
+}
+
+
 
 
 

@@ -74,8 +74,15 @@
           <li class="nav-item">
             <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cabanas.html">Cabañas</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cabañas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="cabana_alpina.html">Alpina (2 pers)</a></li>
+              <li><a class="dropdown-item" href="cabana_cumbre.html">Cumbre (4 pers)</a></li>
+              <li><a class="dropdown-item" href="cabana_andina.html">Andina (6 pers)</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="entorno.html">Entorno</a>
@@ -138,7 +145,7 @@
           <p> Contamos con 3 diferentes modelos de cabañas totalmente equipadas para que vivas una experiencia 100%
             inolvidable inmerso en un bosque nativo, de esta forma buscamos que logres desconectarte de la ciudad y que
             disfrutes del paisaje y de los atractivos de la zona.</p>
-          <a href="cabanas.html" class="btn btn-lg btn-outline-light mt-3 mb-3 px4"> ver cabañas <i
+          <a href="#cabanas" class="btn btn-lg btn-outline-light mt-3 mb-3 px4"> ver cabañas <i
               class="fas fa-chevron-right"></i></a>
         </div>
         <div class="col-md-6 col-sm-12 mt-5 p-0 img-effect">
@@ -146,13 +153,17 @@
         </div>
       </div>
     </div>
-
   </div>
 
+  <div class="separator">
+    <svg class="separator__svg" width="100%" height="150" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#6c757d" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 0 10 V 50 L 100 10"></path>
+      </svg>
+  </div>
 
   
   <div class="container">
-    <div class="row d-flex align-items-center pt-5 pb-5">
+    <div class="row d-flex align-items-center pb-5">
       <div class="col-md-6 col-sm-12 mb-5 img-effect">
         <img src="images/nieve.jpg" alt="Niños esquiando en Centro de Ski nevados de Chillan" class="img-fluid">
       </div>
@@ -164,7 +175,7 @@
     </div>
   </div>
 
-  <div class="container-fluid bg-light pt-5">
+  <div class="container-fluid bg-light pt-5" id="cabanas">
     <div class="row d-flex align-items-center">
       <div class="col text-center mt-4">
         <h3 class="subtitle-underline">Conoce nuestras cabañas</h3>
@@ -173,9 +184,12 @@
 
     <div class="container">
       <div class="row d-flex align-items-center pt-5 pb-5">
+  
         <div class="col-md-4 col-sm-12 pb-5">
           <div class="card">
-            <img src="images/alpina.jpg" class="card-img-top" alt="Cabaña Alpina para 2 personas en Chillán House">
+            <div class="card-image">
+              <img src="images/alpina.jpg" class="card-img-top" alt="Cabaña Alpina para 2 personas en Chillán House">
+            </div>
             <div class="card-body">
               <h2 class="card-title">Cabaña Alpina</h2>
               <p>2 Personas</p>
@@ -186,7 +200,9 @@
   
         <div class="col-md-4 col-sm-12 pb-5">
           <div class="card">
-            <img src="images/cumbre.jpg" class="card-img-top" alt="Cabaña Cumbre para 4 personas en Chillán House">
+            <div class="card-image">
+              <img src="images/cumbre.jpg" class="card-img-top" alt="Cabaña Cumbre para 4 personas en Chillán House">
+            </div>
             <div class="card-body">
               <h2 class="card-title">Cabaña Cumbre</h2>
               <p> 4 Personas</p>
@@ -197,7 +213,9 @@
   
         <div class="col-md-4 col-sm-12 pb-5">
           <div class="card">
-            <img src="images/andina.jpg" class="card-img-top" alt="Cabaña Andina para 6 personas en Chillán House">
+            <div class="card-image">
+              <img src="images/andina.jpg" class="card-img-top" alt="Cabaña Andina para 6 personas en Chillán House">
+            </div>
             <div class="card-body">
               <h2 class="card-title">Cabaña Andina</h2>
               <p>6 Personas</p>

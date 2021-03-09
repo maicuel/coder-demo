@@ -28,11 +28,14 @@ a:hover {
   transition: 0.5s;
 }
 
-h2.card-title {
-  font-size: 1.5rem;
+.separator {
+  top: -15px;
+  left: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-/* base Colors */
 /* Animaciones */
 @keyframes animation {
   from {
@@ -119,6 +122,11 @@ h2.card-title {
 .btn:hover i {
   opacity: 1;
   left: 5px;
+}
+
+.btn-secondary:hover {
+  background-color: #252b2d;
+  border-color: #252b2d;
 }
 
 /* image */
@@ -318,6 +326,29 @@ div > img:hover {
     height: 240px;
   }
 }
+@media screen and (min-width: 782px) and (max-width: 988px) {
+  #carousel-cabanas {
+    position: relative;
+    top: -90px;
+  }
+}
+/* Cards */
+.card h2.card-title {
+  font-size: 1.5rem;
+}
+.card .card-image {
+  overflow: hidden;
+  position: relative;
+  height: 30%;
+}
+.card img {
+  transition: all 0.9s ease;
+  width: 100%;
+}
+.card:hover img {
+  transform: scale(1.2);
+}
+
 /* Galeria */
 .grid-container-gallery {
   display: grid;
@@ -326,7 +357,17 @@ div > img:hover {
   padding: 3rem;
 }
 .grid-container-gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   opacity: 0;
+}
+.grid-container-gallery img:hover {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transform-origin: center;
+  transform: scale(1.03);
+  box-shadow: 0 0 1em 0.1em rgba(0, 0, 0, 0.2);
 }
 .grid-container-gallery > .img-gallery {
   grid-template-columns: 1fr;
@@ -359,18 +400,6 @@ div > img:hover {
   grid-column: auto/span 2;
   grid-row: auto/span 2;
   animation-delay: 3.5s;
-}
-.grid-container-gallery img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.grid-container-gallery img:hover {
-  transition-property: transform;
-  transition-duration: 0.3s;
-  transform-origin: center;
-  transform: scale(1.03);
-  box-shadow: 0 0 1em 0.1em rgba(0, 0, 0, 0.2);
 }
 
 /* media queries */
@@ -474,6 +503,8 @@ fieldset {
 .service-cta {
   background-color: #ff3b3f;
   color: white;
+  position: relative;
+  margin: 0 auto;
 }
 
 /* footer */

@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 h3.subtitle-underline:after {
     content: "";
     display: block;
@@ -31,18 +32,11 @@ a:hover {
     transition: 0.5s;
 }
 
-h2.card-title {
-    font-size: 1.5rem;
+
+.separator {
+    top: -15px;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
-
-/* base Colors */ 
-
-$light-gray: #bbbbbb;
-$dark-gray: #252b2d;
-$light-red: #ff3b3f;
-$white: #fff;
-$black: #000;
-
-
-
-

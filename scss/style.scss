@@ -1,6 +1,7 @@
 
 @import '../scss/base/mixins';
 @import '../scss/base/base';
+@import '../scss/base/colors';
 @import '../scss/base/animations';
 @import '../scss/base/extends';
 
@@ -10,6 +11,7 @@
 @import '../scss/components/navbar';
 @import '../scss/components/hero';
 @import '../scss/components/carousel';
+@import '../scss/components/card';
 @import '../scss/components/gallery';
 @import '../scss/components/form';
 @import '../scss/components/services';
