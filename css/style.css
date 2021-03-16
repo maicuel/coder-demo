@@ -196,14 +196,14 @@ div > img:hover {
   align-items: center;
 }
 .hero.nosotros {
-  background-image: url(../images/Cabana-Amanecer.jpg);
+  background-image: url(https://maicuel.github.io/coder-demo/images/Cabana-Amanecer.jpg);
   background-position: center right;
 }
 .hero.entorno {
-  background-image: url(../images/hero-1.jpg);
+  background-image: url(https://maicuel.github.io/coder-demo/images/hero-1.jpg);
 }
 .hero.contact {
-  background-image: url(../images/andariveles.jpg);
+  background-image: url(https://maicuel.github.io/coder-demo/images/andariveles.jpg);
 }
 .hero::before {
   content: "";
