@@ -124,7 +124,20 @@ a:hover {
   left: 5px;
 }
 
+.btn-outline-light {
+  width: 150px;
+  transition: width 0.5s;
+}
+.btn-outline-light:hover {
+  width: 180px;
+}
+
+.btn-secondary {
+  width: 90%;
+  transition: width 0.5s;
+}
 .btn-secondary:hover {
+  width: 100%;
   background-color: #252b2d;
   border-color: #252b2d;
 }
@@ -174,7 +187,6 @@ div > img:hover {
 
 /* hero */
 .hero {
-  background-image: url("https://maicuel.github.io/coder-demo/images/hero-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
@@ -182,6 +194,16 @@ div > img:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hero.nosotros {
+  background-image: url("../../images/Cabana-Amanecer.jpg");
+  background-position: center right;
+}
+.hero.entorno {
+  background-image: url("../../images/hero-1.jpg");
+}
+.hero.contact {
+  background-image: url("../../images/andariveles.jpg");
 }
 .hero::before {
   content: "";
@@ -333,11 +355,11 @@ div > img:hover {
   height: 30%;
 }
 .card img {
-  transition: all 0.9s ease;
+  transition: all 0.6s ease-in-out;
   width: 100%;
 }
 .card:hover img {
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(5deg);
 }
 
 /* Galeria */
@@ -429,6 +451,21 @@ fieldset {
     margin-top: 3rem;
   }
 }
+/* Modal */
+.modal-backdrop.show {
+  opacity: 0.9;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #bbbbbb;
+}
+
 /* Services */
 .service-description {
   display: flex;

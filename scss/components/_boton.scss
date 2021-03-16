@@ -1,6 +1,7 @@
 /* Boton */ 
 
 .btn  {
+
     & > i {
         opacity: 0;
         font-size: .8rem;
@@ -8,15 +9,30 @@
         left: 2px;
         transition: 0.5s;
     }
+
     &:hover i {
         opacity: 1;
         left: 5px;
     }
+    
+}
+
+.btn-outline-light {
+    width: 150px;
+    transition: width 0.5s;
+
+    &:hover {
+        width: 180px;
+    }
+
 }
 
 .btn-secondary {
+    width: 90%;
+    transition: width 0.5s;
        
     &:hover{
+        width: 100%;
         background-color: $dark-gray;
         border-color: $dark-gray;
     }
