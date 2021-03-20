@@ -535,6 +535,45 @@ fieldset {
   margin: 0 auto;
 }
 
+/* Price */
+.price-wrapper .title:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 16px 0;
+  background-color: #fff;
+}
+.price-wrapper .row > div {
+  background-color: #252b2d;
+}
+.price-wrapper .row > div:first-child {
+  background-color: #263538;
+}
+.price-wrapper h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.price-wrapper .price-subtitle {
+  margin: 0;
+  color: #536163;
+}
+.price-wrapper .price {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+.price-wrapper .price:before {
+  content: "$";
+  font-size: 1rem;
+  margin-right: 3px;
+}
+.price-wrapper .price:after {
+  content: "x dia";
+  font-size: 0.8rem;
+  margin-left: 3px;
+}
+
 /* footer */
 footer {
   background-color: #000;
