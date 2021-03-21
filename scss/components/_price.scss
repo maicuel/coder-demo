@@ -1,7 +1,12 @@
 /* Price */ 
 
-.price-wrapper {
+.price-section {
+    margin: 0;
+    padding: 0;
+}
 
+.price-wrapper {
+    
     & .title {
         &:after {
             content: "";
@@ -16,6 +21,7 @@
     & .row > div {
     background-color: $dark-gray; 
     height: 15rem;
+    position: relative;
 
         &:first-child {
             background-color: $petrol;
@@ -36,6 +42,10 @@
    & .price {
     font-size: 1.8rem;
     margin-top: 1rem;
+    position: absolute;
+    right: 31px;
+    bottom: 20px;
+
 
     &:before{
         content: '$';

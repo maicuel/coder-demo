@@ -536,6 +536,11 @@ fieldset {
 }
 
 /* Price */
+.price-section {
+  margin: 0;
+  padding: 0;
+}
+
 .price-wrapper .title:after {
   content: "";
   display: block;
@@ -547,6 +552,7 @@ fieldset {
 .price-wrapper .row > div {
   background-color: #252b2d;
   height: 15rem;
+  position: relative;
 }
 .price-wrapper .row > div:first-child {
   background-color: #263538;
@@ -563,6 +569,9 @@ fieldset {
 .price-wrapper .price {
   font-size: 1.8rem;
   margin-top: 1rem;
+  position: absolute;
+  right: 31px;
+  bottom: 20px;
 }
 .price-wrapper .price:before {
   content: "$";
