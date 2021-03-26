@@ -47,3 +47,13 @@
   @keyframes opacity-anim { 
     100% { opacity: 1; }
   }
+
+
+  @keyframes carousel-animation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+  }

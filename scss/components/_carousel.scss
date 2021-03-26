@@ -1,25 +1,19 @@
 /* Carousel */
 
-
 #home-slider {
    @extend %height_75;
   
     img {
         @extend %height_75;
         object-fit: cover;
-        transition: all .9s ease;
+        animation: carousel-animation 9s forwards;
+        animation-delay: .5s;
         opacity: .6;
     }
 
     .carousel-item {
 
         background-color: $black;
-    
-        &:hover img {
-            transform: scale(1.1);
-            opacity: .4;
-            
-        }
     
         &img::before {
             content: '';
@@ -40,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     h2 {
         @extend %title;
     }

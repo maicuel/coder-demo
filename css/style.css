@@ -78,6 +78,14 @@ a:hover {
     opacity: 1;
   }
 }
+@keyframes carousel-animation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 /* Extends */
 .carousel-caption::after, .hero .col:after, .carousel h2, .hero h1 {
   animation-iteration-count: 1;
@@ -243,15 +251,12 @@ div > img:hover {
 /* Carousel */
 #home-slider img {
   object-fit: cover;
-  transition: all 0.9s ease;
+  animation: carousel-animation 9s forwards;
+  animation-delay: 0.5s;
   opacity: 0.6;
 }
 #home-slider .carousel-item {
   background-color: #000;
-}
-#home-slider .carousel-item:hover img {
-  transform: scale(1.1);
-  opacity: 0.4;
 }
 #home-slider .carousel-itemimg::before {
   content: "";
